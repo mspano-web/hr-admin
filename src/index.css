@@ -1,3 +1,30 @@
+.action-buttons {
+  display: flex;
+  justify-content: space-between; 
+  width: 220px; 
+  margin: 0 auto; 
+}
+
+.action-buttons button {
+  width: 100px; 
+  height: 30px; 
+  background-color: #add8e6;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.2s;
+}
+
+.action-buttons button:hover {
+  transform: translateY(2px);
+}
+
+.action-buttons button:active {
+  transform: translateY(4px);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +32,194 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url('../public/hr.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8); 
+  z-index: -1; 
+}
+
+.body-container {
+  position: relative;
+}
+
+.body-container {
+  position: relative;
+}
+
+.card {
+  width: calc(100% - 200px); 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  margin: 0 auto; 
+}
+
+.create-button {
+  background-color: #add8e6;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  outline: none;
+  padding: 10px 20px;
+  position: absolute;
+  top: 100px; 
+  right: 50px;
+  transition: transform 0.2s;
+}
+
+.create-button:hover {
+  transform: translateY(2px);
+}
+
+.create-button:active {
+  transform: translateY(4px);
+}
+
+.create-button span {
+  display: block;
+  text-align: center;
+}
+
+.create-form {
+  display: flex;
+  justify-content: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.form-row {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.form-label {
+  margin-right: 10px;
+}
+
+.form-input {
+  margin-right: 10px;
+  flex: 1; 
+}
+
+.hr-divider {
+  width: 100%;
+  border-top: 1px solid #ddd;
+  margin: 20px 0; 
+}
+
+.form-button {
+  background-color: #add8e6;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.2s;
+}
+
+.form-button:hover {
+  transform: translateY(2px);
+}
+
+.form-button:active {
+  transform: translateY(4px);
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  width: calc(100% - 40px); 
+  margin: 0 auto; 
+  padding-top: 20px; 
+}
+
+.form-button.primary {
+  margin-right: 200px; 
+}
+
+.form-button.cancel {
+  background-color: #f2f2f2; 
+}
+
+.form-button.secondary {
+  background-color: #f2f2f2; 
+}
+
+h1 {
+  text-align: center; 
+  margin-top: 50px; 
+}
+
+.subtitle {
+  text-align: center;
+}
+
+.table-container {
+  text-align: center; 
+}
+
+.table-container table {
+  border-collapse: collapse; 
+  width: 80%; 
+  margin: 0 auto; 
+}
+
+.table-container th, .table-container td {
+  border: 1px solid #ddd; 
+  padding: 8px; 
+}
+
+.table-container th {
+  background-color: #7FFF00; 
+}
+
+.table-container tbody tr:nth-child(even) {
+  background-color: #f2f2f2; 
+}
+
+.table-container tbody tr:nth-child(odd) {
+  background-color: #ffffff; 
+}
+
+.table-container {
+  text-align: center;
+}
+
+.table-container table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.table-container th, .table-container td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-container th {
+  background-color: #89AC76; 
+}
+
+.table-container tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table-container tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
